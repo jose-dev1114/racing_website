@@ -6,7 +6,7 @@ export default function HomePage() {
     <div className="flex flex-col">
       {/* Full-screen Video Hero — responsive height */}
       <VideoHero
-        videoSrc="/video.mov"
+        videoSrc="/video.mp4"
       />
 
       {/* Bio + CTA Section */}
