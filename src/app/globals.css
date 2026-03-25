@@ -321,7 +321,7 @@ a { color: inherit; text-decoration: none; }
 
 .race-table th {
   text-align: left;
-  padding: 11px 16px;
+  padding: 16px 16px;
   font-size: 0.7rem;
   font-weight: 700;
   letter-spacing: 2px;
@@ -332,7 +332,7 @@ a { color: inherit; text-decoration: none; }
 }
 
 .race-table td {
-  padding: 14px 16px;
+  padding: 20px 16px;
   font-size: 0.9rem;
   color: rgba(255, 255, 255, 0.88);
   border-bottom: 1px solid rgba(255, 255, 255, 0.07);
