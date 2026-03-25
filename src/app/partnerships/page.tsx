@@ -48,7 +48,7 @@ export default function PartnershipsPage() {
       <section className="page-section px-4 sm:px-6 section-dark">
         <div className="page-content--wide mx-auto animate-fade-up">
           <Image
-            src="https://www.carterknight.racing/hs-fs/hubfs/Carter%26%20Casey-155%202.jpg"
+            src="/partnership.jpg"
             alt="Carter Knight Racing"
             width={1400}
             height={800}

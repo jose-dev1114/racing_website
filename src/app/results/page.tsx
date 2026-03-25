@@ -36,7 +36,7 @@ export default function ResultsPage() {
         className="page-hero"
         style={{
           backgroundImage:
-            "url(https://www.carterknight.racing/hubfs/2026_CArter_license-7.jpg)",
+            "url(/result.jpg)",
         }}
       >
         <div className="page-hero__overlay" />

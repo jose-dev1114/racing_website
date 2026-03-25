@@ -38,7 +38,7 @@ export default function AboutPage() {
             {/* Photo */}
             <div className="flex-shrink-0 w-full md:w-[360px] animate-fade-up">
               <Image
-                src="https://www.carterknight.racing/hs-fs/hubfs/Carter%26%20Casey-1.jpg"
+                src="/about.jpg"
                 alt="Carter Knight"
                 width={360}
                 height={480}
@@ -85,7 +85,7 @@ export default function AboutPage() {
       {/* Track Feature Image */}
       <section className="relative overflow-hidden" style={{ height: "380px" }}>
         <Image
-          src="https://images.unsplash.com/photo-1541447271487-09612b3f49f7?auto=format&fit=crop&w=1800&q=85"
+          src="/about.jpg"
           alt="Race driver on track"
           fill
           className="object-cover object-center"
