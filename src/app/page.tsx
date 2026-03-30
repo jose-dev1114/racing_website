@@ -1,4 +1,5 @@
 import VideoHero from "@/components/VideoHero";
+import QuoteStrip from "@/components/QuoteStrip";
 import Link from "next/link";
 
 export default function HomePage() {
@@ -9,6 +10,8 @@ export default function HomePage() {
         videoSrc="/video.mp4"
       />
 
+      <QuoteStrip />
+
       {/* Bio + CTA Section */}
       {/* <section className="section-blue w-full py-16 md:py-24 px-4 sm:px-6">
         <div className="max-w-[860px] mx-auto text-center">
@@ -17,7 +20,7 @@ export default function HomePage() {
           </p>
 
           <p className="text-white text-lg sm:text-xl md:text-2xl leading-relaxed font-medium mb-6">
-            Carter Knight is a 16-year-old race driver competing regionally in{" "}
+            Carter Knight is a 16-year-old race car driver competing regionally in{" "}
             <span className="font-bold">Spec Miata</span> as he develops his skills and builds
             his future in motorsports.
           </p>

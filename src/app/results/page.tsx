@@ -1,3 +1,5 @@
+import QuoteStrip from "@/components/QuoteStrip";
+
 const results = [
   {
     race: "Race 1",
@@ -7,6 +9,7 @@ const results = [
     class: "Spec Miata",
     position: "9th",
     notes: "",
+    youtubeUrl: "", // add YouTube URL here when available
   },
   {
     race: "Race 2",
@@ -16,6 +19,7 @@ const results = [
     class: "Spec Miata",
     position: "7th",
     notes: "",
+    youtubeUrl: "",
   },
   {
     race: "Race 3",
@@ -25,6 +29,7 @@ const results = [
     class: "Spec Miata",
     position: "9th",
     notes: "",
+    youtubeUrl: "",
   },
 ];
 
@@ -75,7 +80,17 @@ export default function ResultsPage() {
                     <td className="text-white/60">{r.date}</td>
                     <td className="text-white/70">{r.location}</td>
                     <td>{r.class}</td>
-                    <td><span className="font-bold text-white">{r.position}</span></td>
+                    <td>
+                      {r.youtubeUrl ? (
+                        <a href={r.youtubeUrl} target="_blank" rel="noopener noreferrer"
+                          className="font-bold text-white underline underline-offset-4 decoration-white/30 hover:decoration-white transition-all inline-flex items-center gap-1">
+                          {r.position}
+                          <svg viewBox="0 0 24 24" fill="currentColor" width="12" height="12" className="opacity-50"><path d="M10 6v2H5v11h11v-5h2v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6zm11-3v8l-3.5-3.5-5 5L11 11l5-5L12.5 3H21z"/></svg>
+                        </a>
+                      ) : (
+                        <span className="font-bold text-white">{r.position}</span>
+                      )}
+                    </td>
                     <td className="text-white/65">{r.notes}</td>
                   </tr>
                 ))}
@@ -92,9 +107,17 @@ export default function ResultsPage() {
                     <span className="text-xs font-bold tracking-widest text-white/50 uppercase">{r.race}</span>
                     {r.date && <span className="ml-2 text-xs text-white/40">{r.date}</span>}
                   </div>
-                  <span className="bg-white/10 text-white text-xs font-bold px-3 py-1 rounded-full">
-                    {r.position}
-                  </span>
+                  {r.youtubeUrl ? (
+                    <a href={r.youtubeUrl} target="_blank" rel="noopener noreferrer"
+                      className="bg-white/10 text-white text-xs font-bold px-3 py-1 rounded-full inline-flex items-center gap-1 hover:bg-white/20 transition-colors">
+                      {r.position}
+                      <svg viewBox="0 0 24 24" fill="currentColor" width="10" height="10" className="opacity-50"><path d="M10 6v2H5v11h11v-5h2v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6zm11-3v8l-3.5-3.5-5 5L11 11l5-5L12.5 3H21z"/></svg>
+                    </a>
+                  ) : (
+                    <span className="bg-white/10 text-white text-xs font-bold px-3 py-1 rounded-full">
+                      {r.position}
+                    </span>
+                  )}
                 </div>
                 <p className="text-white font-bold text-base">{r.event}</p>
                 <p className="text-white/60 text-sm mt-1">{r.location}</p>
@@ -143,6 +166,8 @@ export default function ResultsPage() {
           </p>
         </div>
       </section>
+
+      <QuoteStrip />
     </div>
   );
 }

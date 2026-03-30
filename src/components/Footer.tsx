@@ -36,7 +36,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mb-10">
 
           {/* Column 1: Logo + Bio */}
-          <div className="flex flex-col gap-4 items-center sm:items-start sm:col-span-2 lg:col-span-1 text-center sm:text-left">
+          <div className="flex flex-col gap-4 items-center sm:items-start sm:col-span-2 lg:col-span-1 text-center sm:text-left" style={{paddingBottom: '12px'}}>
             <Link href="/" className="inline-block">
               <Image
                 src="https://www.carterknight.racing/hs-fs/hubfs/Horizontal-W-on-Transparent.png"
@@ -48,7 +48,7 @@ export default function Footer() {
               />
             </Link>
             <p className="text-sm leading-relaxed text-white/70 max-w-[300px]">
-              Carter Knight is a 16-year-old race driver competing regionally in Spec Miata,
+              Carter Knight is a 16-year-old race car driver competing regionally in Spec Miata,
               building his future in motorsports from the Reno–Tahoe region.
             </p>
             <a
@@ -137,7 +137,7 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="h-px w-full bg-white/10 mb-6" />
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-white/40">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-white/40 pt-4">
           <p>© 2026 Carter Knight Racing · All Rights Reserved</p>
           <p className="hidden sm:block">Reno–Tahoe · Spec Miata · N. CA NASA</p>
         </div>

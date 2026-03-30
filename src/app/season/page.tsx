@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import QuoteStrip from "@/components/QuoteStrip";
 
 type RaceStatus = "Completed" | "Upcoming";
 
@@ -84,9 +85,10 @@ export default function SeasonPage() {
         </div>
       </section>
 
+      <QuoteStrip />
+
       {/* ── The 2026 Machine ───────────────────────────────────── */}
-      <section className="relative overflow-hidden section-dark">
-        {/* Full-bleed background image with dark overlay */}
+      {/* <section className="relative overflow-hidden section-dark">
         <div className="absolute inset-0">
           <Image
             src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1800&q=85"
@@ -98,7 +100,6 @@ export default function SeasonPage() {
           <div className="absolute inset-0 bg-gradient-to-r from-[#052c52]/95 via-[#052c52]/75 to-transparent" />
         </div>
 
-        {/* Text content floated left */}
         <div className="relative z-10 page-content--wide mx-auto px-4 sm:px-6 py-20 sm:py-28">
           <div className="max-w-[500px] animate-fade-up">
             <p className="text-xs font-bold tracking-[4px] text-white/50 uppercase mb-4">2026 Season</p>
@@ -112,7 +113,7 @@ export default function SeasonPage() {
             </p>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* ── At The Track — 3-photo strip ──────────────────────── */}
       <section className="page-section section-blue px-4 sm:px-6">

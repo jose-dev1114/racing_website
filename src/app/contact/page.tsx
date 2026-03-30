@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import QuoteStrip from "@/components/QuoteStrip";
 
 export default function ContactPage() {
   const [form, setForm] = useState({ name: "", email: "", subject: "", message: "" });
@@ -120,6 +121,8 @@ export default function ContactPage() {
           )}
         </div>
       </section>
+
+      <QuoteStrip />
     </div>
   );
 }

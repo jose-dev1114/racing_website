@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import QuoteStrip from "@/components/QuoteStrip";
 
 const stats = [
   { label: "Age", value: "16" },
@@ -101,8 +102,10 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* <QuoteStrip /> */}
+
       {/* CTA */}
-      <section className="page-section px-4 sm:px-6 text-center">
+      {/* <section className="page-section px-4 sm:px-6 text-center">
         <p className="text-white/65 text-base mb-8 max-w-[480px] mx-auto leading-relaxed animate-fade-up">
           Interested in following or supporting Carter&apos;s journey? Let&apos;s connect.
         </p>
@@ -110,7 +113,7 @@ export default function AboutPage() {
           <Link href="/contact" className="btn-primary">Contact Carter</Link>
           <Link href="/partnerships" className="btn-primary">Partnership Info</Link>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }
